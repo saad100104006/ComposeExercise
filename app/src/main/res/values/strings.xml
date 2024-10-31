@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ComposeExercise</string>
+    <string name="brand">Brand:</string>
+    <string name="price">Price:</string>
+</resources>
