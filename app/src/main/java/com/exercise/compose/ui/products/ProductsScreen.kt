@@ -15,7 +15,6 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.exercise.compose.ui.theme.Black
-import com.exercise.compose.ui.theme.Teal200
 import com.exercise.compose.utils.ComposeText
 import com.exercise.compose.utils.ErrorText
 

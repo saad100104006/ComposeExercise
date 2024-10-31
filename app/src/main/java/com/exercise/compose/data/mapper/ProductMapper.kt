@@ -8,10 +8,10 @@ import com.exercise.compose.domain.uimodel.ProductUiModel
 
 fun ProductResponseItem.toProductUiModel() = ProductUiModel(
     id = id ?: -1,
-    title = title,
+    title = title.orEmpty(),
     thumbnail = thumbnail.orEmpty(),
-    brand = brand,
-    price = price
+    brand = brand.orEmpty(),
+    price = price?:0.0
 )
 
 fun ProductDetailsResponse.toProductDetails() = ProductDetails(
