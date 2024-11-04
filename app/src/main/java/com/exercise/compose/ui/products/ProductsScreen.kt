@@ -11,9 +11,11 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import com.exercise.compose.R
 import com.exercise.compose.ui.theme.Black
 import com.exercise.compose.utils.ComposeText
 import com.exercise.compose.utils.ErrorText
@@ -23,7 +25,7 @@ fun ProductsScreen(products: ProductState, onItemClick: (Int?) -> Unit) {
     Column {
         ComposeText(
             textAlign = TextAlign.Center,
-            text = "All Products",
+            text = stringResource(R.string.all_products),
             style = MaterialTheme.typography.h5.copy(fontWeight = FontWeight.Bold),
             modifier = Modifier
                 .padding(

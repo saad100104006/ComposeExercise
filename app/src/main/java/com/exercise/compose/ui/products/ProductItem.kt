@@ -7,6 +7,7 @@ import androidx.compose.material.Card
 import androidx.compose.material.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
@@ -17,6 +18,7 @@ import com.exercise.compose.ui.theme.Grey
 import com.exercise.compose.ui.theme.White
 import com.exercise.compose.utils.ComposeText
 import com.exercise.compose.utils.NetworkImage
+import com.exercise.compose.R
 
 
 @Composable
@@ -58,7 +60,7 @@ fun ProductItem(productUiModel: ProductUiModel, onItemClick: (Int?) -> Unit) {
                 Row(modifier = Modifier.fillMaxWidth()) {
 
                     ComposeText(
-                        text = "Brand:",
+                        text = stringResource(R.string.brand),
                         modifier = Modifier
                             .padding(
                                 start = 8.dp, top = 4.dp
@@ -82,7 +84,7 @@ fun ProductItem(productUiModel: ProductUiModel, onItemClick: (Int?) -> Unit) {
             Row(modifier = Modifier.fillMaxWidth()) {
 
                 ComposeText(
-                    text = "Price: ",
+                    text = stringResource(R.string.price),
                     modifier = Modifier
                         .padding(
                             start = 8.dp, top = 4.dp
